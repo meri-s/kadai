@@ -7,7 +7,8 @@ void main(void) {
 
 	fp = fopen("STEP_00-07.txt", "r");
 	fgets(sBuf, 256, fp);
-
 	printf("%s", sBuf);
 	fclose(fp);
+
+	return;
 }
