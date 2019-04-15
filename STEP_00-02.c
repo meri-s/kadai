@@ -18,7 +18,7 @@ void main(void) {
 	uh = 0;					/*unsugned short型の最小値 (10進数)*/
 
 	ui16 = 0xffffffff;		/*unsigned int型の最大値 (16進数)*/
-	ui16 = 0x0;				/*unsigned int型の最小値 (16進数)*/
+	ui16 = 0x00;				/*unsigned int型の最小値 (16進数)*/
 
 	return;
 }
