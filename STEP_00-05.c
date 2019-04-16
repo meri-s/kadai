@@ -1,6 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-
 #include<string.h>
 #include<stdio.h>
 
@@ -47,7 +46,7 @@ void main(void) {
 	s2[13] = 0x6e;		/*ï∂éönÇë„ì¸*/
 	s2[14] = '\0';		/*èIí[*/
 
-	memcpy(&(ss1[0]), &(s1[0]), 11);
+	memcpy(&(ss1[0]), &(s1[0]), sizeof(ss1));
 	strcpy(&(ss2[0]), &(s2[0]));
 
 
