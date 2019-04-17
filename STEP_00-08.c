@@ -14,9 +14,9 @@ void main(void) {
 	int a = 0;			/* func2 戻り値確認用変数 */
 	char *b = NULL;		/* func3 戻り値確認用変数 */
 
-	func1();				/* No.1の関数を呼び出す */
-	a = func2();			/* No.2の関数を呼び出す */
-	b = func3();			/* No.3の関数を呼び出す */
+	func1();			/* No.1の関数を呼び出す */
+	a = func2();		/* No.2の関数を呼び出す */
+	b = func3();		/* No.3の関数を呼び出す */
 
 	return;
 }
