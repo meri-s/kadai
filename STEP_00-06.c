@@ -23,16 +23,16 @@ void main(void) {
 	s[9] = 0xa8;		
 	s[10] = '\0';		
 
-	printf("変数の値は%dです。\n", i);
-	printf("変数の値は0x%xです。\n", i2);
-	printf("変数の値は%sです。\n", &(s[0]));
+	printf("変数の値は%dです\n", i);
+	printf("変数の値は0x%Xです\n", i2);
+	printf("変数の値は%sです\n", &(s[0]));
 
 
 	/*２のプログラム*/
 	
 	gets(&(inputBuffer[0]));
 
-	printf("入力された値は%sです。",&(inputBuffer[0]));
+	printf("入力された値は%sです",&(inputBuffer[0]));
 
 	return;
 }
