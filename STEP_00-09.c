@@ -1,4 +1,7 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 #include<stdio.h>
+#include<string.h>
 #include"STEP_00-09.h"		/* STEP_00-09ヘッダーファイルをインクルード */
 
 void main(void) {
@@ -36,13 +39,7 @@ void func3(int *p) {
 
 /* No.4の関数 */
 void func4(char *p) {
-	p[0] = 0x82;		/* 2byte文字'か'の 1byte目 */
-	p[1] = 0xa9;		/* 2byte文字'か'の 2byte目 */
-	p[2] = 0x82;		/* 2byte文字'き'の 1byte目 */
-	p[3] = 0xab;		/* 2byte文字'き'の 2byte目 */
-	p[4] = 0x82;		/* 2byte文字'く'の 1byte目 */
-	p[5] = 0xad;		/* 2byte文字'く'の 2byte目 */
-	p[6] = '\0';		/* 終端 */
+	strcpy(&(p[0]), "かきく");
 
 	return;
 }
