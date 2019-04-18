@@ -39,7 +39,7 @@ void func3(int *p) {
 
 /* No.4‚ÌŠÖ” */
 void func4(char *p) {
-	strcpy(&(p[0]), "‚©‚«‚­");
+	strcpy(p, "‚©‚«‚­");
 
 	return;
 }
