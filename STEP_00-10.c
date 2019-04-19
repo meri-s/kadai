@@ -6,7 +6,7 @@ void func3(int *p);	/* プロトタイプ宣言 */	/* No.03の関数 */
 void func4(int *p);	/* プロトタイプ宣言 */	/* No.04の関数 */
 
 void main(void) {
-	int i1 = 0;		
+	int i1 = 0;
 	int i2 = 0;
 	int i3 = 0;
 	int i4 = 0;
@@ -37,7 +37,7 @@ void main(void) {
 void func1(int *p) {
 	if (*p == 0) {			/* pの値が 0 の場合 */
 		*p = 1;				/* pに 1 を格納		*/
-		printf("%d", *p);	/* pの値を出力		*/	
+		printf("%d", *p);	/* pの値を出力		*/
 	}
 	else {					/* pの値が 1 以外の場合 */
 		*p = 2;				/* pに 2 を格納			*/
@@ -97,21 +97,3 @@ void func4(int *p) {
 	}
 	return;
 }
-
-
-#if 0
-void func4(int *p) {
-	while (*p <= 20) {		/* pの値が20以下の場合 ループする */
-
-		if (*p >= 11) {			/* pの値が 11 以上の場合 */
-			printf("%d", *p);	/* pの値を出力			 */
-		}
-
-		if (*p == 20) {
-			break;			/* pの値が 20 の場合 ループ終了 */
-		}
-
-		(*p)++;				/* pの値をインクリメント */
-	}
-}
-#endif
